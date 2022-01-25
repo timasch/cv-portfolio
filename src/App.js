@@ -110,7 +110,7 @@ const App = () => {
               Update and Delete)- operations. Go ahead and try!
             </p> 
             </Card.Text>
-            <Card.Link href="https://timasch.github.io/react-book-table">Link to Book Table -project</Card.Link>
+            <Card.Link href="https://timasch.github.io/book-table">Link to Book Table -project</Card.Link>
             {/* <Card.Link href="#">Another Link</Card.Link> */}
           </Card.Body>
         </Card>
