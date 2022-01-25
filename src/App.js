@@ -94,7 +94,9 @@ const App = () => {
         <Card style={{ width: '18rem' }}>
           <Card.Body>
             <Card.Title>React Book table</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">()</Card.Subtitle>
+            <Card.Subtitle className="mb-2 text-muted">
+            <img className="card-image" src={react} alt="React" title="ReactJS" />
+            </Card.Subtitle>
             <Card.Text style={{textAlign: 'left'}}>
             <p>
               This is React Frontend project. It shows information of 10 famous
