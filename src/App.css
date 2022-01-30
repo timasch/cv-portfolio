@@ -67,19 +67,19 @@ body {
 
 /* Projects */
 
-/* .project-container {
-  
-} */
+.project-container {
+  width: 80%;
+  margin: auto;
+}
 
 .project-item {
-  margin: auto;
-  width: 10%;
-  padding-top: 1em;
-  padding-bottom: 5em;
+  display : inline-flex;
+  margin: 5em;
 }
 
 .card-image {
   flex: 1;
   width: 30px;
   height: 30px;
+  margin: 10px;
 }

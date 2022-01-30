@@ -12,6 +12,8 @@ import linux from "./images/LINUX.jpeg";
 import graphql from "./images/GraphQL.png";
 import ubuntu from "./images/orb_ubuntu_white.png";
 import node from "./images/nodeJS.png";
+import apollo from "./images/Apollo.png";
+import mongodb from "./images/MongoDB.png";
 
 const App = () => {
   return (
@@ -91,33 +93,104 @@ const App = () => {
       />
       <div className="project-container">
         <div className="project-item">
-        <Card style={{ width: '18rem' }}>
-          <Card.Body>
-            <Card.Title>React Book table</Card.Title>
-            <Card.Subtitle className="mb-2 text-muted">
-            <img className="card-image" src={react} alt="React" title="ReactJS" />
-            </Card.Subtitle>
-            <Card.Text style={{textAlign: 'left'}}>
-            <p>
-              This is React Frontend project. It shows information of 10 famous
-              books in the table.
-            </p>
-            <p>
-              Data is hardcoded dummy data, so you can test, and
-              even delete all books from the table. Just refresh the browser to
-              restore the data.
-            </p>
-            <p>
-              This project consist of all CRUD (Create, Read,
-              Update and Delete)- operations. Go ahead and try!
-            </p> 
-            </Card.Text>
-            <Card.Link href="https://timasch.github.io/book-table" target="_blank" rel="noreferrer">
-            Link to Book Table -project
-            </Card.Link>
-            {/* <Card.Link href="#">Another Link</Card.Link> */}
-          </Card.Body>
-        </Card>
+          <Card style={{ width: "18rem" }}>
+            <Card.Body>
+              <Card.Title>React Book table - project</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">
+                <img
+                  className="card-image"
+                  src={react}
+                  alt="React"
+                  title="ReactJS"
+                />
+              </Card.Subtitle>
+              <Card.Text style={{ textAlign: "left" }}>
+                <p>
+                  This is React Frontend project. It shows information of 10
+                  famous books in the table.
+                </p>
+                <p>
+                  Data is hardcoded dummy data, so you can test, and even delete
+                  all books from the table. Just refresh the browser to restore
+                  the data.
+                </p>
+                <p>
+                  This project consist of all CRUD (Create, Read, Update and
+                  Delete)- operations. Go ahead and try!
+                </p>
+              </Card.Text>
+              <Card.Link
+                href="https://timasch.github.io/book-table"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Link to project in browser
+              </Card.Link>
+              <br />
+              <br />
+              <Card.Link
+                href="https://github.com/timasch/book-table"
+                target="_blank"
+                rel="noreferrer"
+              >
+                GitHub-codes
+              </Card.Link>
+            </Card.Body>
+          </Card>
+          <div className="project-item">
+            <Card style={{ width: "18rem" }}>
+              <Card.Body>
+                <Card.Title>Book Backend - project</Card.Title>
+                <Card.Subtitle className="mb-2 text-muted">
+                  <img
+                    className="card-image"
+                    src={node}
+                    alt="NodeJS"
+                    title="NodeJS"
+                  />
+                  <img
+                    className="card-image"
+                    src={graphql}
+                    alt="GraphQL"
+                    title="GraphQL"
+                  />
+                  <img
+                    className="card-image"
+                    src={apollo}
+                    alt="Apollo"
+                    title="Apollo"
+                  />
+                  <img
+                    className="card-image"
+                    src={mongodb}
+                    alt="MongoDB"
+                    title="MongoDB"
+                  />
+                </Card.Subtitle>
+                <Card.Text style={{ textAlign: "left" }}>
+                  <p>
+                    This is NodeJS Backend project. It uses GraphQL queries to
+                    fetch book data from MongoDB database and modify it.
+                  </p>
+                  <p>
+                    Project runs in Apollo Studio Sandbox, where user can
+                    execute queries and mutations.
+                  </p>
+                  <p>
+                    Data is saved to MongoDB Atlas. It holds the information of
+                    100 famous books.
+                  </p>
+                </Card.Text>
+                <Card.Link
+                  href="https://github.com/timasch/book-backend"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Github-codes
+                </Card.Link>
+              </Card.Body>
+            </Card>
+          </div>
         </div>
       </div>
     </div>
