@@ -170,7 +170,7 @@ const App = () => {
                 <Card.Text style={{ textAlign: "left" }}>
                   <p>
                     This is NodeJS Backend project. It uses GraphQL queries to
-                    fetch book data from MongoDB database and modify it.
+                    fetch book data from MongoDB database.
                   </p>
                   <p>
                     Project runs in Apollo Studio Sandbox, where user can
