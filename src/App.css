@@ -65,17 +65,12 @@ body {
   border-radius: 50%;
 }
 
+.linkedin-image {
+  width: 35px;
+  height: 35px;
+}
+
 /* Projects */
-
-.project-container {
-  width: 80%;
-  margin: auto;
-}
-
-.project-item {
-  display : inline-flex;
-  margin: 5em;
-}
 
 .card-image {
   flex: 1;

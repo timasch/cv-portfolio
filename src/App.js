@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Card } from "react-bootstrap";
+import { Card, Container, Stack } from "react-bootstrap";
 import "./App.css";
 import Navbar from "./components/CVNavbar";
 import penguin from "./images/penguin.png";
@@ -14,6 +14,7 @@ import ubuntu from "./images/orb_ubuntu_white.png";
 import node from "./images/nodeJS.png";
 import apollo from "./images/Apollo.png";
 import mongodb from "./images/MongoDB.png";
+import linkedin from "./images/LinkedIn.png";
 
 const App = () => {
   return (
@@ -33,11 +34,25 @@ const App = () => {
           <p>Hi!</p>
           <p>
             I am Titta Schroderus and I am Software Developer. More specifically
-            Frontend developer. This is my Portfolio page for my projects. My
+            JavaScript developer. This is my Portfolio page for my projects. My
             main focus is now on React development.
           </p>
           <p>
             Down below you can see short descriptions and links to each project.
+          </p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/titta-schroderus-1273061b/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img
+                className="linkedin-image"
+                src={linkedin}
+                alt="LinkedIn"
+                title="Link to my LinkedIn profile"
+              />
+            </a>
           </p>
         </div>
         <div className="header-item-image">
@@ -91,8 +106,8 @@ const App = () => {
           margin: "auto",
         }}
       />
-      <div className="project-container">
-        <div className="project-item">
+      <Container className="my-4">
+        <Stack direction="horizontal" gap="4" className="mb-4">
           <Card style={{ width: "18rem" }}>
             <Card.Body>
               <Card.Title>React Book table - project</Card.Title>
@@ -137,62 +152,60 @@ const App = () => {
               </Card.Link>
             </Card.Body>
           </Card>
-          <div className="project-item">
-            <Card style={{ width: "18rem" }}>
-              <Card.Body>
-                <Card.Title>Book Backend - project</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">
-                  <img
-                    className="card-image"
-                    src={node}
-                    alt="NodeJS"
-                    title="NodeJS"
-                  />
-                  <img
-                    className="card-image"
-                    src={graphql}
-                    alt="GraphQL"
-                    title="GraphQL"
-                  />
-                  <img
-                    className="card-image"
-                    src={apollo}
-                    alt="Apollo"
-                    title="Apollo"
-                  />
-                  <img
-                    className="card-image"
-                    src={mongodb}
-                    alt="MongoDB"
-                    title="MongoDB"
-                  />
-                </Card.Subtitle>
-                <Card.Text style={{ textAlign: "left" }}>
-                  <p>
-                    This is NodeJS Backend project. It uses GraphQL queries to
-                    fetch book data from MongoDB database.
-                  </p>
-                  <p>
-                    Project runs in Apollo Studio Sandbox, where user can
-                    execute queries and mutations.
-                  </p>
-                  <p>
-                    Data is saved to MongoDB Atlas. It holds the information of
-                    100 famous books.
-                  </p>
-                </Card.Text>
-                <Card.Link
-                  href="https://github.com/timasch/book-backend"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Github-codes
-                </Card.Link>
-              </Card.Body>
-            </Card>
-          </div>
-        </div>
-      </div>
+          <Card style={{ width: "18rem" }}>
+            <Card.Body>
+              <Card.Title>Book Backend - project</Card.Title>
+              <Card.Subtitle className="mb-2 text-muted">
+                <img
+                  className="card-image"
+                  src={node}
+                  alt="NodeJS"
+                  title="NodeJS"
+                />
+                <img
+                  className="card-image"
+                  src={graphql}
+                  alt="GraphQL"
+                  title="GraphQL"
+                />
+                <img
+                  className="card-image"
+                  src={apollo}
+                  alt="Apollo"
+                  title="Apollo"
+                />
+                <img
+                  className="card-image"
+                  src={mongodb}
+                  alt="MongoDB"
+                  title="MongoDB"
+                />
+              </Card.Subtitle>
+              <Card.Text style={{ textAlign: "left" }}>
+                <p>
+                  This is NodeJS Backend project. It uses GraphQL queries to
+                  fetch book data from MongoDB database.
+                </p>
+                <p>
+                  Project runs in Apollo Studio Sandbox, where user can execute
+                  queries and mutations.
+                </p>
+                <p>
+                  Data is saved to MongoDB Atlas. It holds the information of
+                  100 famous books.
+                </p>
+              </Card.Text>
+              <Card.Link
+                href="https://github.com/timasch/book-backend"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Github-codes
+              </Card.Link>
+            </Card.Body>
+          </Card>
+        </Stack>
+      </Container>
     </div>
   );
 };
